@@ -1,0 +1,19 @@
+{
+  "name": "cinemaya-ai-cartoon-generator",
+  "version": "1.0.0",
+  "description": "Full-stack CineMaya AI prototype for turning stories into cinematic cartoon video production plans.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "ai-video",
+    "cartoon-generator",
+    "storytelling",
+    "backend",
+    "prototype"
+  ],
+  "author": "Sushmita",
+  "license": "MIT"
+}

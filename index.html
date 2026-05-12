@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineMaya AI | Cartoon Story Video Generator</title>
+    <meta
+      name="description"
+      content="CineMaya AI turns written stories into cinematic cartoon videos with AI storyboard, characters, voiceover, music, lip sync, and HD exports."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-pink"></div>
+    <div class="ambient ambient-green"></div>
+    <div class="ambient ambient-yellow"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#hero" aria-label="CineMaya AI home">
+        <span class="brand-mark">✦</span>
+        <span>CineMaya AI</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#studio">Studio</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#features">Features</a>
+        <a href="#export">Export</a>
+      </nav>
+      <a class="header-cta" href="#create">Start Creating</a>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">One-click animated storytelling studio</p>
+          <h1>Turn any story into a magical cinematic cartoon film.</h1>
+          <p class="hero-text">
+            CineMaya AI transforms written scripts into scene-by-scene cartoon
+            visuals, talking characters, emotional narration, background music,
+            lip sync, and HD video exports for web and mobile creators.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#create">Create AI Video</a>
+            <a class="secondary-button" href="#workflow">See Workflow</a>
+          </div>
+          <div class="hero-stats" aria-label="Platform highlights">
+            <span><strong>12+</strong> story genres</span>
+            <span><strong>4K</strong> export ready</span>
+            <span><strong>1-click</strong> movie pipeline</span>
+          </div>
+        </div>
+
+        <div class="phone-stage" aria-label="Mobile app preview">
+          <div class="phone-frame">
+            <div class="phone-topbar"></div>
+            <div class="app-card app-card-featured">
+              <span class="status-pill">Rendering</span>
+              <h2>The Moonlit Princess</h2>
+              <p>Fantasy storyteller · Hindi voice · cinematic camera</p>
+              <div class="progress-track"><span></span></div>
+            </div>
+            <div class="scene-grid">
+              <article>
+                <span>01</span>
+                <p>Character design</p>
+              </article>
+              <article>
+                <span>02</span>
+                <p>Castle scene</p>
+              </article>
+              <article>
+                <span>03</span>
+                <p>Lip sync</p>
+              </article>
+              <article>
+                <span>04</span>
+                <p>Music mix</p>
+              </article>
+            </div>
+            <button id="phoneRenderButton" class="render-button" type="button">Make Video Preview</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="studio" class="dashboard section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Premium creator dashboard</p>
+          <h2>Everything a cartoon director needs on one home screen.</h2>
+        </div>
+        <div class="dashboard-grid">
+          <article class="dashboard-tile accent-pink">
+            <span>✍️</span>
+            <h3>Create Story</h3>
+            <p>Write, paste, upload text, or generate a new story with AI.</p>
+          </article>
+          <article class="dashboard-tile accent-green">
+            <span>🎬</span>
+            <h3>Generate AI Video</h3>
+            <p>Automatically animate scenes with cinematic motion and transitions.</p>
+          </article>
+          <article class="dashboard-tile accent-yellow">
+            <span>🔥</span>
+            <h3>Trending Stories</h3>
+            <p>Start from viral-ready templates for kids, fantasy, horror, and more.</p>
+          </article>
+          <article class="dashboard-tile accent-pink">
+            <span>🧚</span>
+            <h3>Character Library</h3>
+            <p>Save consistent heroes, villains, narrators, outfits, and voices.</p>
+          </article>
+          <article class="dashboard-tile accent-green">
+            <span>🎙️</span>
+            <h3>Voice Library</h3>
+            <p>Choose emotional Hindi and English voices with speed and pitch control.</p>
+          </article>
+          <article class="dashboard-tile accent-yellow">
+            <span>💾</span>
+            <h3>Saved Videos</h3>
+            <p>Manage drafts, cloud projects, re-downloads, and sharing links.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="create" class="creator section-shell">
+        <div class="creator-panel glass-panel">
+          <div class="section-heading compact">
+            <p class="eyebrow">AI story input system</p>
+            <h2>Paste a story and preview the automatic production plan.</h2>
+          </div>
+          <label for="storyInput">Your story</label>
+          <textarea id="storyInput" rows="8">A brave little girl finds a glowing key in a forest and unlocks a floating kingdom hidden above the clouds.</textarea>
+          <div class="controls-grid">
+            <label>
+              Animation style
+              <select id="styleSelect">
+                <option>Pixar-inspired 3D</option>
+                <option>Fairytale cinematic cartoon</option>
+                <option>Anime episode</option>
+                <option>Cute kids animation</option>
+                <option>Realistic 3D cartoon</option>
+                <option>Fantasy magic world</option>
+              </select>
+            </label>
+            <label>
+              Duration
+              <select id="durationSelect">
+                <option>Auto duration</option>
+                <option>1 minute</option>
+                <option>5 minutes</option>
+                <option>10 minutes</option>
+                <option>15 minutes</option>
+                <option>20 minutes</option>
+              </select>
+            </label>
+            <label>
+              Narrator voice
+              <select id="voiceSelect">
+                <option>Epic Hindi storyteller</option>
+                <option>Deep cinematic male</option>
+                <option>Emotional English narrator</option>
+                <option>Fantasy storyteller</option>
+                <option>Horror narrator</option>
+              </select>
+            </label>
+          </div>
+          <div class="button-row">
+            <button id="generateStoryButton" class="secondary-button" type="button">Generate AI Story</button>
+            <button id="generatePlan" class="primary-button" type="button">Make Video</button>
+          </div>
+          <p id="backendStatus" class="backend-status">Checking backend studio...</p>
+        </div>
+
+        <aside class="ai-output glass-panel" aria-live="polite">
+          <p class="eyebrow">Live AI breakdown</p>
+          <h3 id="planTitle">Cloud Kingdom Adventure</h3>
+          <ul id="planList">
+            <li>Detect 3 main characters with consistent clothing and faces.</li>
+            <li>Build 6 cinematic scenes with emotional lighting.</li>
+            <li>Add floating camera movement, music, captions, and lip sync.</li>
+          </ul>
+          <div class="quality-row">
+            <span>720p</span><span>1080p</span><span>2K</span><span>4K</span>
+          </div>
+          <div id="projectMeta" class="project-meta">Local preview mode</div>
+          <div class="video-actions">
+            <a id="videoPreviewLink" class="secondary-button hidden" href="#" target="_blank" rel="noreferrer">Open Video</a>
+            <a id="downloadManifestLink" class="secondary-button hidden" href="#" target="_blank" rel="noreferrer">Download Manifest</a>
+          </div>
+          <iframe id="videoPreviewFrame" class="video-preview-frame hidden" title="Generated animated video preview"></iframe>
+          <div id="scenePreview" class="scene-preview"></div>
+        </aside>
+      </section>
+
+      <section id="workflow" class="workflow section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Special AI workflow</p>
+          <h2>From paragraph to polished MP4, fully automated.</h2>
+        </div>
+        <div class="timeline">
+          <div>Story Input</div>
+          <div>Scene Detection</div>
+          <div>Character Generation</div>
+          <div>Image Generation</div>
+          <div>Animation</div>
+          <div>Voiceover</div>
+          <div>Lip Sync</div>
+          <div>Music</div>
+          <div>Video Render</div>
+          <div>Export</div>
+        </div>
+      </section>
+
+      <section id="features" class="features section-shell">
+        <div class="feature-card wide">
+          <p class="eyebrow">Visual intelligence</p>
+          <h2>Consistent characters, expressive scenes, and cinematic style control.</h2>
+          <p>
+            The generator tracks faces, hairstyles, outfits, colors, emotions,
+            environments, actions, and dialogue so each shot feels connected.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Storyboard AI</h3>
+          <p>Breaks stories into scenes, camera directions, thumbnails, titles, subtitles, and YouTube SEO ideas.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Motion AI</h3>
+          <p>Creates walking, blinking, laughing, fighting, acting, facial motion, and smooth cinematic transitions.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Audio AI</h3>
+          <p>Syncs narration, emotional background scores, footsteps, wind, crowds, magic, and battle effects.</p>
+        </div>
+      </section>
+
+      <section class="backend section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Full backend orchestration</p>
+          <h2>Production-ready API foundation for projects, renders, and exports.</h2>
+        </div>
+        <div class="backend-grid">
+          <article class="feature-card">
+            <h3>REST API</h3>
+            <p>Health, capabilities, generated stories, project creation, render orchestration, gallery listing, and export manifests.</p>
+          </article>
+          <article class="feature-card">
+            <h3>AI Pipeline Engine</h3>
+            <p>Story analysis creates characters, scenes, image prompts, animation prompts, voice plans, music, SFX, subtitles, SEO, and thumbnails.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Local Persistence</h3>
+            <p>Projects and render manifests are saved to a backend data store so creators can return to drafts and rendered videos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="export" class="export section-shell glass-panel">
+        <div>
+          <p class="eyebrow">Gallery, storage, and sharing</p>
+          <h2>Create once. Save everywhere. Share instantly.</h2>
+          <p>
+            Store drafts and finished videos in a personal gallery, download MP4
+            files, save to device storage, or share directly to YouTube,
+            Instagram, TikTok, and Facebook.
+          </p>
+        </div>
+        <div class="export-stack">
+          <span>MP4</span>
+          <span>Cloud storage</span>
+          <span>Phone gallery</span>
+          <span>Social publishing</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>CineMaya AI</span>
+      <p>Magical, futuristic cartoon storytelling for everyone.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
